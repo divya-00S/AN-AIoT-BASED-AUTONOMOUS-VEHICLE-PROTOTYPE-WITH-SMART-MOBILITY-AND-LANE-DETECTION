@@ -46,8 +46,8 @@ The autonomous vehicle uses camera-based detection and predefined decision-makin
 
 Decision Summary
 
-Detected Condition| Vehicle Action
-Two lanes and safe path| Move forward
+| Detected Condition | Vehicle Action |
+Two lanes and safe path| Move forward |
 Three lanes and unsafe condition| Return to the intended path
 Animal or other supported obstacle| Stop
 Stop sign detected| Stop
