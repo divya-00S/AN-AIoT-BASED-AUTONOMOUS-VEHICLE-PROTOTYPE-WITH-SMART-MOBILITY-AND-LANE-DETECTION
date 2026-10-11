@@ -56,7 +56,7 @@ Decision Summary
 - Pedestrian crossing at a zebra crossing: Vehicle stops.
 - No pedestrian crossing at a zebra crossing: Vehicle continues if the path is safe.
 - Speed hump detected: LED blinks 
-- # Future Improvements
+# Future Improvements
 - Improve lane and zebra-crossing detection under different lighting conditions.
 - Refine decision-making and vehicle-control logic.
 - Improve obstacle detection and response.
