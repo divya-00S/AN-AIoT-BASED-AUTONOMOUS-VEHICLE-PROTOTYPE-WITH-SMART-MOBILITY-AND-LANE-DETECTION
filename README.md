@@ -46,13 +46,12 @@ The autonomous vehicle uses camera-based detection and predefined decision-makin
 
 Decision Summary
 
-| Detected Condition | Vehicle Action |
-Two lanes and safe path| Move forward |
-Three lanes and unsafe condition| Return to the intended path
-Animal or other supported obstacle| Stop
-Stop sign detected| Stop
-Zebra crossing with a crossing pedestrian| Stop
-Zebra crossing without a crossing pedestrian| Continue if the path is safe
+- Two lanes detected and path safe: Vehicle moves forward.
+- Three lanes detected and path unsafe: Vehicle returns to the intended path.
+- Animal or other supported obstacle detected: Vehicle stops.
+- Stop sign detected: Vehicle stops.
+- Pedestrian crossing at a zebra crossing: Vehicle stops.
+- No pedestrian crossing at a zebra crossing: Vehicle continues if the path is safe.
 # Future Improvements
 - Improve lane and zebra-crossing detection under different lighting conditions.
 - Refine decision-making and vehicle-control logic.
