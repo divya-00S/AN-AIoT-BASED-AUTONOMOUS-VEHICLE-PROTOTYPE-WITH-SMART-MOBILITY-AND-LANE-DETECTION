@@ -11,6 +11,7 @@ AIoT-based autonomous vehicle prototype integrating Raspberry Pi, Arduino, OpenC
 - BTS7960 motor drivers
 - DC motors
 - Ultrasonic sensor
+- LED 
 - Battery and power supply components
 - Connecting wires and vehicle chassis
 # Software and Technologies
@@ -40,9 +41,11 @@ The autonomous vehicle uses camera-based detection and predefined decision-makin
 
 3. Zebra Crossing and Pedestrian Detection: When a zebra crossing is detected, the system checks for a pedestrian crossing. If a pedestrian is detected crossing, the vehicle stops. If no pedestrian is detected crossing, the vehicle continues moving according to the programmed logic.
 
-4. Command Transmission: The Raspberry Pi sends the appropriate movement command to the Arduino through serial communication.
+4. Speed Hump Detection: When a speed hump is detected, the system activates the LED, which blinks twice to indicate detection.
 
-5. Vehicle Control: The Arduino processes the received command and controls the motors through the motor drivers to execute the required action.
+5. Command Transmission: The Raspberry Pi sends the appropriate movement command to the Arduino through serial communication.
+
+6. Vehicle Control: The Arduino processes the received command and controls the motors through the motor drivers to execute the required action.
 
 Decision Summary
 
@@ -52,7 +55,8 @@ Decision Summary
 - Stop sign detected: Vehicle stops.
 - Pedestrian crossing at a zebra crossing: Vehicle stops.
 - No pedestrian crossing at a zebra crossing: Vehicle continues if the path is safe.
-# Future Improvements
+- Speed hump detected: LED blinks 
+- # Future Improvements
 - Improve lane and zebra-crossing detection under different lighting conditions.
 - Refine decision-making and vehicle-control logic.
 - Improve obstacle detection and response.
