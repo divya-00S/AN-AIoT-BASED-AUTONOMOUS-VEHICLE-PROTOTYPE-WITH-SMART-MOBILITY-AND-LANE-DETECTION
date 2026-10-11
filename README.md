@@ -5,9 +5,9 @@ AIoT-based autonomous vehicle prototype integrating Raspberry Pi, Arduino, OpenC
 -To implement intelligent decision-making that analyzes the vehicle's surroundings and determines appropriate actions.
 -To integrate Raspberry Pi, Arduino, sensors, and AI models into a unified autonomous mobility prototype for real-time perception and control.
 # Hardware Components
--Raspberry Pi 5 (8GB RAM)
--Arduino Uno R4 Minima
--USB camera
+- Raspberry Pi 5 (8GB RAM)
+- Arduino Uno R4 Minima
+- USB camera
 -BTS7960 motor drivers
 -DC motors
 -Ultrasonic sensor
