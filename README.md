@@ -30,6 +30,29 @@ AIoT-based autonomous vehicle prototype integrating Raspberry Pi, Arduino, OpenC
 - The Arduino interprets the received commands and controls the motor drivers.
 - The motors respond to the implemented control logic to perform the required vehicle movements.
 - The system combines camera-based perception with embedded control to demonstrate key concepts used in autonomous mobility.
+# Output Logic and Decision-Making
+
+The autonomous vehicle uses camera-based detection and predefined decision-making logic to determine its movement based on the surrounding environment.
+
+1. Lane Detection and Safety Assessment: When two lanes are detected and the path is considered safe, the vehicle moves forward. When three lanes are detected and the condition is classified as unsafe, the vehicle follows the implemented logic to return to the intended path.
+
+2. Object Detection: When supported objects, such as animals, other vehicles, or stop signs, are detected, the vehicle stops according to the programmed control logic.
+
+3. Zebra Crossing and Pedestrian Detection: When a zebra crossing is detected, the system checks for a pedestrian crossing. If a pedestrian is detected crossing, the vehicle stops. If no pedestrian is detected crossing, the vehicle continues moving according to the programmed logic.
+
+4. Command Transmission: The Raspberry Pi sends the appropriate movement command to the Arduino through serial communication.
+
+5. Vehicle Control: The Arduino processes the received command and controls the motors through the motor drivers to execute the required action.
+
+Decision Summary
+
+Detected Condition| Vehicle Action
+Two lanes and safe path| Move forward
+Three lanes and unsafe condition| Return to the intended path
+Animal or other supported obstacle| Stop
+Stop sign detected| Stop
+Zebra crossing with a crossing pedestrian| Stop
+Zebra crossing without a crossing pedestrian| Continue if the path is safe
 # Future Improvements
 - Improve lane and zebra-crossing detection under different lighting conditions.
 - Refine decision-making and vehicle-control logic.
